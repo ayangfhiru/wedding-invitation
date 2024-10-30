@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Generate Link</title>
+</head>
+
+<body class="flex w-screen h-screen justify-center items-center">
+    <div class="mx-auto p-10 flex flex-col items-center justify-center bg-secondary rounded-md w-full md:w-1/2">
+        <span class="flex flex-col justify-center items-center">
+            <label for="penerima">Nama Penerima</label>
+            <input type="text" name="penerima" id="penerima" class="w-72 border-2 border-black rounded-md px-2 py-1">
+        </span>
+        <button id="generate"
+            class="inline-block mt-10 px-5 py-2 bg-primary rounded-md drop-shadow-xl">Generate</button>
+        <span class="mt-10 flex space-x-1">
+            <p id="urlDisplay"></p>
+        </span>
+        <span class="mt-10 flex space-x-4">
+            <a href="" id="sendWa" class="hidden px-5 py-2 bg-primary rounded-md drop-shadow-xl">Kirim WA</a>
+            <a href="" id="cobaUrl" target="_blank" class="hidden px-5 py-2 bg-primary rounded-md drop-shadow-xl">Tes
+                Link</a>
+        </span>
+    </div>
+
+    <script src="./public/js/script_generate.js"></script>
+</body>
+
+</html>
